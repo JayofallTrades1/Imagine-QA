@@ -1,0 +1,9 @@
+{
+    "Host": "10.121.204.100",
+    "Port": 5672,
+    "UserName": "admin",
+    "Password": "ImagineDB1",
+    "VirtualHost": "Versio",
+    "TlsEnabled": false,
+    "TlsServerName": ""
+}

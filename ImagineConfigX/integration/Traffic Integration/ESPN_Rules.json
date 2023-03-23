@@ -1,0 +1,13 @@
+{
+    "Language": "CSharp",
+    "systemReferences": [
+        "System.dll"
+    ],
+    "References": [
+        "VersioContent.dll",
+        "WIN_ManagedLogInterfaces.dll",
+        "log4net.dll"
+    ],
+    "CodeFile": "/programdata/Imagine Communications/Onyx/Traffic Integration/Rules.cs",
+    "QualifiedClassName": "Versio.Automation.Services.Rules.Rules"
+}

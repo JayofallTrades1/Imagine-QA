@@ -1,0 +1,15 @@
+{
+    "Logger": {
+      "LogThreshold": "Debug",
+      "LogToConsole": "false",
+      "LogToDebug": "false",
+      "LogToFile": "false",
+      "LogPath": "/var/log/ContentService.log",
+      "LogToWindowsEventLog": "false"
+    },
+    "ContentService": {
+      "HermesServerUrl": "http://10.121.204.100:9872/api",
+      "portNumber": 10480
+    }
+  }
+  

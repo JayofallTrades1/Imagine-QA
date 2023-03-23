@@ -1,0 +1,24 @@
+version: "3.6"
+services:
+  contentportal-config:
+    image: deploy.imaginecommunications.com:443/versio-docker-rel/contentportal-config:4.6.0.72-linux
+    environment:
+      - HERMES_HOST=10.121.107.172
+      - HERMES_PORT=9872
+      - CONTENT_HOST=10.121.107.172
+      - CONTENT_PORT=10480
+      - MOTION_HOST=10.121.107.172
+      - MOTION_PORT=9005
+      - WEBSOCKET_HOST=10.121.107.172
+      - WEBSOCKET_PORT=37036
+      - HEARTBEAT_HOST=10.121.107.172
+      - HEARTBEAT_PORT=8899
+      - ENABLE_TLS="false"
+      - RABBITMQ_HOST=10.121.107.172
+      - RABBITMQ_USER=admin
+      - RABBITMQ_PWD=ImagineDB1
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager

@@ -1,0 +1,10 @@
+{
+  "rabbitUser" : "imagine",
+  "rabbitPassword" : "ImagineDB1",
+  "rabbitHost" : "172.31.71.194",
+  "rabbitVirtualHost" : "Versio",
+  "contentServiceHost" : "172.31.71.194:35000",
+  "hermesHost" : "172.31.71.194",
+  "automationHost": "172.31.71.194",
+  "redundancyHost": "172.31.71.194"
+}

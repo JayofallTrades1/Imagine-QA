@@ -1,0 +1,13 @@
+{
+    "config": {
+        "port": 51634,
+        "expirationTimeMS": 60000,
+        "channelSearchTimeMS": 10000,
+        "pathAllowlist": [
+            "#"
+        ],
+        "exchangeAllowlist": [
+            "Automation"
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "websocket":  {
+                      "host":  "${WEBSOCKET_HOST}",
+                      "port":  37036
+                  },
+    "logging":  {
+                    "host":  "",
+                    "port":  39861
+                },
+    "router_service":  {
+                           "host":  "",
+                           "port":  9090
+                       },
+    "color_theme":  "dark",
+    "max_stack_lock_duration":  12,
+    "allowed_pins":  6,
+    "refresh_faults_interval_ms":  60000,
+    "password":  "",
+    "license_url":  "license.txt"
+}

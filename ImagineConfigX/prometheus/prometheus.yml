@@ -1,0 +1,97 @@
+global:
+  scrape_interval:     15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+
+# Rules and alerts are read from the specified file(s)
+rule_files:
+ - rules.yml
+
+# Alerting specifies settings related to the Alertmanager
+alerting:
+ alertmanagers:
+   - static_configs:
+     - targets:
+       # Alertmanager's default port is 9093
+       - alertmanager:9093
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+    - targets: ['localhost:9090']
+
+  - job_name: 'LX-Docker-Nodes'
+    static_configs:
+    - targets: ['10.121.204.111:9100','10.121.204.121:9100','10.121.204.131:9100']
+
+  - job_name: 'LY-Docker-Nodes'
+    static_configs:
+    - targets: ['10.121.214.111:9100','10.121.214.121:9100','10.121.214.131:9100']
+
+  - job_name: 'LX-Postgres-Nodes'
+    static_configs:
+    - targets: ['10.121.204.112:9100','10.121.204.122:9100']
+
+  - job_name: 'LY-Postgres-Nodes'
+    static_configs:
+    - targets: ['10.121.214.112:9100']
+
+  - job_name: 'LX-HAProxy-Nodes'
+    static_configs:
+    - targets: ['10.121.204.113:9100','10.121.204.123:9100','10.121.204.133:9100']
+
+  - job_name: 'LY-HAProxy-Nodes'
+    static_configs:
+    - targets: ['10.121.214.113:9100','10.121.214.123:9100','10.121.214.133:9100']
+
+  - job_name: 'LX-Rabbit'
+    static_configs:
+      - targets: ['10.121.204.111:15692','10.121.204.121:15692','10.121.204.131:15692']
+
+  - job_name: 'LY-Rabbit'
+    static_configs:
+      - targets: ['10.121.214.111:15692','10.121.214.121:15692','10.121.214.131:15692']
+
+  - job_name: 'LX-Cadvisor'
+    static_configs:
+      - targets: ['10.121.204.111:8085','10.121.204.121:8085','10.121.204.131:8085']
+
+  - job_name: 'LY-Cadvisor'
+    static_configs:
+      - targets: ['10.121.214.111:8085','10.121.214.121:8085','10.121.214.131:8085']
+
+#  - job_name: 'Hermes'
+#    static_configs:
+#      - targets: ['hermes:9872']
+
+  - job_name: 'Versio X1'
+    metrics_path: /metrics/ses
+    static_configs:
+      - targets: ['10.121.204.11:40000','10.121.204.12:40000','10.121.204.13:40000','10.121.204.14:40000','10.121.204.15:40000','10.121.204.16:40000','10.121.204.21:40000','10.121.204.22:40000','10.121.204.23:40000','10.121.204.24:40000','10.121.204.25:40000','10.121.204.26:40000','10.121.204.31:40000','10.121.204.32:40000','10.121.204.33:40000','10.121.204.34:40000']
+
+  - job_name: 'Versio Y1'
+    metrics_path: /metrics/ses
+    static_configs:
+      - targets: ['10.121.214.11:40000','10.121.214.12:40000','10.121.214.13:40000','10.121.214.14:40000','10.121.214.15:40000','10.121.214.16:40000','10.121.214.21:40000','10.121.214.22:40000','10.121.214.23:40000','10.121.214.24:40000','10.121.214.25:40000','10.121.214.26:40000','10.121.214.31:40000','10.121.214.32:40000','10.121.214.33:40000','10.121.214.34:40000']
+
+  - job_name: 'Patroni-Postgres-Cluster'
+    static_configs:
+    - targets: ['10.121.204.112:8008','10.121.204.122:8008','10.121.214.112:8008']
+
+  - job_name: 'LY-HAProxy-Cluster'
+    static_configs:
+    - targets: ['10.121.204.113:9664','10.121.204.123:9664','10.121.204.133:9664']
+
+  - job_name: 'LX-HAProxy-Cluster'
+    static_configs:
+    - targets: ['10.121.214.113:9664','10.121.214.123:9664','10.121.214.133:9664']
+
+
+#  - job_name: 'Websocket Service'
+#    metrics_path: /metrics/websocket
+#    static_configs:
+#      - targets: ['vauto-websocket:40000']
+
+#  - job_name: 'Schedule Service'
+#    metrics_path: /metrics/schedule
+#    static_configs:
+#      - targets: ['vauto-schedule:40000']

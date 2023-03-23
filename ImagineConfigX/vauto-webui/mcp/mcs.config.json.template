@@ -1,0 +1,4 @@
+{
+    "hostname": "${MCS_HOST}",
+    "port": 8080
+}

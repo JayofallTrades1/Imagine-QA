@@ -1,0 +1,6 @@
+{
+    "WatchedFolder": "/var/TrafficInput",
+    "ProcessingFolder": "/var/TrafficOutput/InProcessing",
+    "WatchedFilter": "*.*",
+    "OutputFolder": "/var/TrafficOutput"
+}

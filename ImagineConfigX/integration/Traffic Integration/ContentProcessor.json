@@ -1,0 +1,8 @@
+{
+    "RequestPath": [
+        "Traffic.Outbound.File",
+        "Traffic.Outbound.Formatter.BXF.Content"
+    ],
+    "BxfExportScheduledTime": "0 0 1 * * ?",
+    "BxfExportEndpoints": []
+}

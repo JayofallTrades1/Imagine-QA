@@ -1,0 +1,50 @@
+version: "3.6"
+
+services:
+  ui:
+    image: deploy.imaginecommunications.com:443/versio-docker-dev/vauto-settings-ui:$VER_VAUTO-SETTINGS-UI
+    networks:
+      - imagine_poc
+    ports:
+      - "10000:80"
+    environment:
+      - IDENTITY_SERVER=$VAR_IDENTITY_SERVER
+      - IDENTITY_SERVER_PORT=8081
+      - HERMES_HOST=$VAR_HERMES_HOSTNAME
+      - HERMES_PORT=9872
+      - KEYCLOAK_REALM=Versio
+      - ENABLE_AUTH=true
+      - SPINUP_SERVICE_HOST=$VAR_SPINUP_SERVICE_HOSTNAME
+      - SPINUP_SERVICE_PORT=30000
+      - WEBSOCKET_HOST=$VAR_WEBSOCKET_HOSTNAME
+    deploy:
+      mode: global
+
+  envoy:
+    image: envoyproxy/envoy-dev:$VER_EVOYPROXY
+    ports:
+      - "30000:30000"
+    volumes:
+      - /etc/imagine/config/cloudconfig/envoy.yaml:/etc/envoy/envoy.yaml
+    networks:
+      - imagine_poc
+    deploy:
+      mode: global
+
+  spinup:
+    image: deploy.imaginecommunications.com:443/versio-docker-dev/channel-spinup:$VER_CHANNEL-SPINUP
+    environment:
+      - AWS_REGION=$VAR_AWS_REGION # This is just a default region. Actual region selection is in UI.
+      - SHARED_CONFIG_SECRET=$VAR_AWS_SECRET
+      - IDENTITY_SERVER=$VAR_IDENTITY_SERVER
+      - IDENTITY_SERVER_PORT=8081
+      - HERMES_HOST=$VAR_HERMES_HOSTNAME
+      - HERMES_PORT=9872
+    networks:
+      - imagine_poc
+    deploy:
+      mode: global
+
+networks:
+  imagine_poc:
+    external: true

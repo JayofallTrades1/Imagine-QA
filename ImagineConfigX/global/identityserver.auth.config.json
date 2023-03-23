@@ -1,0 +1,10 @@
+{
+        "url": "http://10.121.107.172:8081/auth/realms/Versio",
+        "httpsCertificate": {
+                "allowInvalid": "true"
+        },
+        "signingCertificate": {
+                "allowInvalid": "true"
+        },
+        "enableAuth": true
+}

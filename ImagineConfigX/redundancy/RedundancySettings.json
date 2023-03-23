@@ -1,0 +1,30 @@
+{
+    "RedundancyVirtualHost": "Versio",
+    "ConfigExchange": "config",
+    "InternalCommExchange": "NodeCommunication",
+    "LoadScheduleRetry": 5000,
+    "GetOnAirLookahead": 10,
+    "GetOnAirLookaheadResync": 10,
+    "GetOnAirRemainingTimeThreshold": "00:00:03:00",
+    "ApiReplyWait": 3000,
+    "GetOnAirWait": 3000,
+    "DemoteReplyWait": 2000,
+    "SyncCheckFrequency": 30000,
+    "SyncCheckDriftAllowance": 5,
+    "RouterServiceBaseUrl": "http://localhost:9090",
+    "AutoResolveStacks": false,
+    "LookaheadSize": 50,
+    "ResyncOnSlavePlayFail": false,
+    "InstanceReportFrequency": 10,
+    "QuarantineOnCompromisedMaster": false,
+    "TreatUnthreadAsError": true,
+    "SyncCheckSecondaries": false,
+    "AppendOnly": true,
+    "ResyncFreezeDelay": 300,
+    "DisableAutoResync": false,
+    "FailedChecksBeforeResync": 1,
+    "AllowResyncDuringRecord": true,
+    "MaxFailedResyncs": 0
+  }
+  
+  
