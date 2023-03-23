@@ -1,4 +1,0 @@
-{
-    "hostname": "${WEBSOCKET_HOST}",
-    "port": 37036
-}

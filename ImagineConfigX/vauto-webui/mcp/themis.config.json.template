@@ -1,4 +1,0 @@
-{
-    "hostname": "${THEMIS_HOST}",
-    "port": 9874
-}

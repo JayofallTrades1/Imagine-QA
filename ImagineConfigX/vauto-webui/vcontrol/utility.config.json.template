@@ -1,6 +1,0 @@
-{
-    "hermes": {
-        "hostname": "${HERMES_HOST}",
-        "port": 9872
-    }
-}

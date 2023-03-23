@@ -1,4 +1,0 @@
-{
-    "hostname": "${CONTENT_HOST}",
-    "port": 10480
-}

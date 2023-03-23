@@ -1,7 +1,0 @@
-{
-	"Language": "CSharp",
-	"systemReferences": ["System.dll", "System.IO.dll"],
-	"References":["VersioTimecodeNetStd.dll", "Newtonsoft.Json.dll", "VersioContent.dll", "OnyxCommonHelpers.NetCore.dll","log4net.dll"],
-	"CodeFile":"/programdata/Imagine Communications/Onyx/Traffic Integration/Rules.cs",
-	"QualifiedClassName": "Versio.Automation.Services.Rules.Rules"
-}

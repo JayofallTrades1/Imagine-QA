@@ -1,5 +1,0 @@
-{
-  "uri": "amqp://admin:ImagineDB1@10.121.204.100:5672/Versio",
-  "exchangename": "Automation",
-  "tlsServerName": ""
-}
