@@ -1,0 +1,261 @@
+version: "3.6"
+
+services:
+    ### vauto UI container: enviroment variables set UI json files  ###
+    ### Supported UI: Master Control MCS/Control, Content Portal, Versio Automation / Asrun Viewer
+
+    content:
+        image: deploy.imaginecommunications.com:443/versio-docker-rel/contentportal-service:4.6.0.35-alpine
+        hostname: "cs-{{.Node.Hostname}}"
+        ports:
+            - target: 10480
+              published: 10480
+              protocol: tcp
+              mode: host
+        networks:
+            - imagine_poc
+        environment:
+            - ProgramData=/programdata
+            #- PG_HOST=10.121.204.100
+            #- PG_USER=postgres
+            #- PG_PASSFILE=/run/secrets/db_pass
+        volumes:
+            - "/etc/imagine/config/content:/programdata/Imagine Communications/ContentService"
+            - "/etc/imagine/config/global:/programdata/Imagine Communications/AuthService"
+        secrets:
+            - db_pass
+        deploy:
+            mode: global
+            #replicas: 1
+            #placement:
+            #    constraints:
+            #        - node.role == manager
+        # logging:
+        #     driver: awslogs
+        #     options:
+        #         awslogs-region: "us-west-2"
+        #         awslogs-group: "vauto-content-logs"
+        #         awslogs-create-group: "true"
+        #         tag: "{{.Name}}"
+
+    mcs:
+        image: deploy.imaginecommunications.com:443/versio-docker-rel/master-control-service:4.0.0.17-alpine
+        ports:
+            - target: 8080
+              published: 8080
+              protocol: tcp
+              mode: host
+        networks:
+            - imagine_poc
+        environment:
+            - MCS_CONFIG_PATH=/config
+        volumes:
+            - "/etc/imagine/config/mcs:/config"
+        deploy:
+            mode: global
+        # logging:
+        #     driver: awslogs
+        #     options:
+        #         awslogs-region: "us-west-2"
+        #         awslogs-group: "vauto-mcs-logs"
+        #         awslogs-create-group: "true"
+        #         tag: "{{.Name}}"
+
+    vauto-schedule:
+        image: deploy.imaginecommunications.com:443/versio-docker-rel/vauto-schedule-service:4.6.1.59-alpine
+        hostname: "ss-{{.Node.Hostname}}"
+        networks:
+            - imagine_poc
+        environment:
+            - ProgramData=/programdata
+            # - AWS_REGION=$AWS_REGION
+            # - AWS_SECRET_RABBITMQ=$AWS_SECRET_NAME
+        volumes:
+            # needed for onprem only
+            - "/etc/imagine/config/global:/programdata/Imagine Communications/Global Config"
+            - "/etc/imagine/config/global:/programdata/Imagine Communications/Onyx"
+        deploy:
+            mode: global
+        # logging:
+        #     driver: awslogs
+        #     options:
+        #         awslogs-region: "us-west-2"
+        #         awslogs-group: "vauto-schedule-logs"
+        #         awslogs-create-group: "true"
+        #         tag: "{{.Name}}"
+
+    vauto-websocket:
+        image: deploy.imaginecommunications.com:443/versio-docker-rel/vauto-websocket-service:4.6.0.172-alpine
+        ports:
+            - target: 37036
+              published: 37036
+              protocol: tcp
+              mode: host
+            - target: 40000
+              published: 40000
+              protocol: tcp
+              mode: host
+        networks:
+            - imagine_poc
+        environment:
+            - ProgramData=/programdata
+            # - AWS_REGION=$AWS_REGION
+            # - AWS_SECRET_RABBITMQ=$AWS_SECRET_NAME
+        # needed for onprem only 
+        volumes:
+            - "/etc/imagine/config/global:/programdata/Imagine Communications/Global Config"
+        deploy:
+            mode: global
+        # logging:
+        #     driver: awslogs
+        #     options:
+        #         awslogs-region: "us-west-2"
+        #         awslogs-group: "vauto-websocket-logs"
+        #         awslogs-create-group: "true"
+        #         tag: "{{.Name}}"
+
+    vauto-redundancy:
+        image: deploy.imaginecommunications.com:443/versio-docker-rel/vauto-redundancy-service:4.6.1.58-alpine
+        hostname: "{{.Node.Hostname}}"
+        networks:
+            - imagine_poc
+        environment:
+            - ProgramData=/programdata
+            # - AWS_REGION=$AWS_REGION
+            # - AWS_SECRET_RABBITMQ=$AWS_SECRET_NAME
+        volumes:
+            - "/etc/imagine/config/redundancy:/programdata/Imagine Communications/Onyx"
+            # needed for onprem only
+            - "/etc/imagine/config/global:/programdata/Imagine Communications/Global Config"
+        deploy:
+            mode: global
+        #    replicas: 1
+        #    placement:
+        #        constraints:
+        #            - node.role == manager
+        # logging:
+        #     driver: awslogs
+        #     options:
+        #         awslogs-region: "us-west-2"
+        #         awslogs-group: "vauto-redundancy-logs"
+        #         awslogs-create-group: "true"
+        #         tag: "{{.Name}}"
+
+    heartbeat:
+        image: deploy.imaginecommunications.com:443/versio-docker-rel/versio-heartbeat-service:2.0.47-alpine
+        networks:
+            - imagine_poc
+        ports:
+            - target: 8899
+              published: 8899
+              protocol: tcp
+              mode: host
+        environment:
+            - ProgramData=/programdata
+        volumes:
+            - "/etc/imagine/config/global:/programdata/Imagine Communications/Versio Heartbeat Service"
+        deploy:
+            mode: global
+        # logging:
+        #     driver: awslogs
+        #     options:
+        #         awslogs-region: "us-west-2"
+        #         awslogs-group: "vauto-heartbeat-logs"
+        #         awslogs-create-group: "true"
+        #         tag: "{{.Name}}"
+
+    vauto-http-bridge:
+        image: deploy.imaginecommunications.com:443/versio-docker-rel/vauto-http-bridge:4.6.0.172-alpine
+        networks:
+            - imagine_poc
+        ports:
+            - target: 51634
+              published: 51634
+              protocol: tcp
+              mode: host
+        environment:
+            - ProgramData=/programdata
+            # - AWS_REGION=$AWS_REGION
+            # - AWS_SECRET_RABBITMQ=$AWS_SECRET_NAME
+        volumes:
+            - "/etc/imagine/config/global:/programdata/Imagine Communications/Onyx"
+            # needed for onprem only
+            - "/etc/imagine/config/global:/programdata/Imagine Communications/Global Config"
+        deploy:
+            mode: global
+        # logging:
+        #     driver: awslogs
+        #     options:
+        #         awslogs-region: "us-west-2"
+        #         awslogs-group: "vauto-httpbridge-logs"
+        #         awslogs-create-group: "true"
+        #         tag: "{{.Name}}"
+
+    vauto-integration:
+        image: deploy.imaginecommunications.com:443/versio-docker-rel/vauto-integration-service:4.6.1.58-alpine
+        hostname: "is-{{.Node.Hostname}}"
+        networks:
+            - imagine_poc
+        ports:
+            - target: 21553
+              published: 21553
+              protocol: tcp
+              mode: host
+        deploy:
+            mode: global
+        environment:
+            - ProgramData=/programdata
+            - CHRONOSCLIENT_FRAMERATE_OVERRIDE=Smpte30d
+            # - AWS_REGION=$AWS_REGION
+            # - AWS_SECRET_RABBITMQ=$AWS_SECRET_NAME
+            
+        volumes:
+            - "/etc/imagine/config/integration:/programdata/Imagine Communications/Onyx"
+            # needed for onprem only
+            - "/etc/imagine/config/global:/programdata/Imagine Communications/Global Config"
+            - "/etc/imagine/config/global:/programdata/Imagine Communications/AuthService"
+            - "/var/TrafficInput:/var/TrafficInput"
+        # logging:
+        #     driver: awslogs
+        #     options:
+        #         awslogs-region: "us-west-2"
+        #         awslogs-group: "vauto-integration-logs"
+        #         awslogs-create-group: "true"
+        #         tag: "{{.Name}}"
+
+    # ingest:
+    #     image: deploy.imaginecommunications.com:443/versio-docker-rel/versio-ingest-service:0.0.1.10-alpine
+    #     ports:
+    #         - target: 81
+    #           published: 81
+    #           protocol: tcp
+    #           mode: host
+    #     networks:
+    #         - imagine_poc
+    #     environment:
+    #         - ProgramData=/programdata
+    #         - PG_HOST=10.121.204.100
+    #         - PG_USER=postgres
+    #         - PG_PASSFILE=/run/secrets/db_pass
+    #     volumes:
+    #         - "/etc/imagine/config/ingest:/programdata/Imagine Communications/VersioIngestService"
+    #         - "/etc/imagine/config/global:/programdata/Imagine Communications/AuthService"
+    #     secrets:
+    #         - db_pass
+    #     deploy:
+    #         mode: global
+    #     logging:
+    #         driver: awslogs
+    #         options:
+    #             awslogs-region: "$AWS_REGION"
+    #             awslogs-group: "vauto-ingest-logs"
+    #             awslogs-create-group: "true"
+    #             tag: "{{.Name}}"
+
+networks:
+    imagine_poc:
+        external: true
+
+secrets:
+    db_pass:
+        file: /etc/imagine/config/content/db_pass.txt

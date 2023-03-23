@@ -1,0 +1,35 @@
+version: "3.6"
+
+services:
+  consul:
+    image: consul:1.9.4  
+    hostname: "c-{{.Node.Hostname}}"
+    networks:
+      - consul
+      - imagine_poc
+    ports:
+      - target: 8400
+        published: 8400
+        protocol: tcp
+        mode: host
+      - target: 8500
+        published: 8500
+        protocol: tcp
+        mode: host
+      - target: 53
+        published: 8600
+        protocol: tcp
+        mode: host
+    volumes:
+      - consul-data:/consul/data
+    deploy:
+      mode: global
+    command: [ "agent", "-server", "-bootstrap-expect=3", "-retry-max=3", "-retry-interval=10s", "-datacenter=imagine", "-join=consul", "-retry-join=consul", "-bind={{ GetInterfaceIP \"eth0\" }}", "-client=0.0.0.0", "-ui"]
+
+networks:
+  consul:
+  imagine_poc:
+    external: true
+
+volumes:
+  consul-data:

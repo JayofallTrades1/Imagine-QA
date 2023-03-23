@@ -1,0 +1,79 @@
+version: "3.6"
+
+services:
+  # postgres:
+  #   image: postgres:9.6
+  #   hostname: vautodb
+  #   ports:
+  #     - target: 5432
+  #       published: 5432
+  #       protocol: tcp
+  #       mode: host
+  #   networks:
+  #     - imagine_poc
+  #   volumes:
+  #     - "/var/lib/postgresql/data/pgdata:/var/lib/postgresql/data/pgdata"
+  #     - "/etc/imagine/config/postgres:/docker-entrypoint-initdb.d"
+  #   environment:
+  #     - POSTGRES_PASSWORD=ImagineDB1
+  #     - PGDATA=/var/lib/postgresql/data/pgdata
+  #   deploy:
+  #     replicas: 1
+  #     placement:
+  #       constraints:
+  #         - node.role == manager
+
+  hermes:
+    image: deploy.imaginecommunications.com:443/versio-docker-rel/imagine-hermes-core:2.2.0.7-alpine
+    ports:
+      - target: 9872
+        published: 9872
+        protocol: tcp
+        mode: host
+    networks:
+      - imagine_poc
+    volumes:
+      - "/etc/imagine/config/hermes:/hermes/.imaginecommunications/imagine-hermes-core"
+    environment:
+      - ProgramData=/hermes/programdata
+      - HOME=/hermes
+      - CUSTOM_HERMES_HOST={{.Node.Hostname}}
+    deploy:
+      mode: global
+    # logging:
+    #   driver: awslogs
+    #   options:
+    #     awslogs-region: "$AWS_REGION"
+    #     awslogs-group: "hermes-logs"
+    #     awslogs-create-group: "true"
+    #     tag: "{{.Name}}"
+
+  # rabbitmq:
+  #   image: deploy.imaginecommunications.com:443/versio-docker-dev/ic-rabbitmq:3.8.9-standalone-1.1
+  #   hostname: rabbitmq
+  #   ports:
+  #     - 15672:15672
+  #     - target: 5672
+  #       published: 5672
+  #       protocol: tcp
+  #       mode: host
+  #   networks:
+  #     - imagine_poc
+  #   environment:
+  #     - RABBITMQ_DEFAULT_USER=admin
+  #     - RABBITMQ_DEFAULT_PASS=ImagineDB1
+  #   volumes:
+  #     - rmqdata:/var/lib/rabbitmq
+  #   deploy:
+  #     replicas: 1
+  #     placement:
+  #       constraints:
+  #         - node.role == manager
+
+
+networks:
+  imagine_poc:
+    external: true
+
+#volumes:
+#  rmqdata:

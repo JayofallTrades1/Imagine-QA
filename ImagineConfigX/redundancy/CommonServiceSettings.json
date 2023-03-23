@@ -1,0 +1,24 @@
+{
+    "RabbitEndpoints": [
+      {
+        "Host": "rabbitmq",
+        "Port": 5672
+      }
+    ],
+    "RabbitUserName": "guest",
+    "RabbitPassword": "guest",
+    "RabbitVirtualHost": "",
+    "RabbitExchangeName": "Automation",
+    "RabbitInternalExchangeName": "AutomationInternal",
+    "RabbitGlobalEventExchangeName": "global.automation.event",
+    "RabbitRequestRoutingKey": "Translate.In",
+    "RabbitInternalTranslateRoutingKey": "Translate.Methods",
+    "HeartbeatInterval": "00:00:01",
+    "HermesEndpoints": [
+      {
+        "Host": "hermes",
+        "Port": 9872
+      }
+    ]
+  }
+  

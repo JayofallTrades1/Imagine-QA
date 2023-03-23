@@ -1,0 +1,1285 @@
+[
+    {
+        "channelGuid":  "79bc58d3-f0f0-4dd9-a45f-8475b281105e",
+        "channelId":  "WTL-HPX-360-5",
+        "channelName":  "WTL-HPX-360-5",
+        "company":  "Imagine Communications",
+        "import":  {
+                       "isValid":  true
+                   },
+        "mode":  "Full",
+        "channelInstances":  [
+                                 {
+                                     "channelInstanceGuid":  "[channelInstanceGuid]",
+                                     "channelInstanceName":  "[channelInstanceName]",
+                                     "profileName":  null,
+                                     "referencedProfileName":  null,
+                                     "redundancies":  [
+
+                                                      ],
+                                     "channelInstanceHostname":  "[channelInstanceHostname]",
+                                     "instanceAdminUsername":  "Administrator",
+                                     "instanceAdminPassword":  "76492d1116743f0423413b16050a5345MgB8AHYATwBpAFAAZQA1AG4AeABIAGQASABQAGcAbwBnAFMASABHAHEARgBjAFEAPQA9AHwAYgAzADEAOAAzAGEAOAAxAGIAYgA1AGEANwA0AGEANAA0ADIAOQAyADgAOQBlADUAMAA0AGUAMgAyADkANQAxAA==",
+                                     "cpu":  "48",
+                                     "numaNodes":  2,
+                                     "processorGroups":  1,
+                                     "numaNodeForInterface":  1,
+                                     "highBitrateNetworkInterfaceCard":  "",
+                                     "systemName":  null,
+                                     "adcDeviceName":  "",
+                                     "adcAppNamePrefix":  "",
+                                     "adcNodeName":  "",
+                                     "adcNicIP":  "",
+                                     "timing":  {
+                                                    "type":  "PTP",
+                                                    "ntpServer":  "",
+                                                    "ptpNicIp":  "137.237.139.19",
+                                                    "useRedundantPtpSource":  false,
+                                                    "ptpRedundantNicIP":  "",
+                                                    "ptpDomain":  0,
+                                                    "ptpMode":  0,
+                                                    "ptpTtl":  6,
+                                                    "ntpRequestInterval":  0
+                                                },
+                                     "videoStandard":  "NTSC",
+                                     "resolution":  "1080i",
+                                     "frameRate":  29.97,
+                                     "branding":  "Branded++",
+                                     "graphicsSystem":  null,
+                                     "supportVizrtGraphics":  false,
+                                     "eas":  {
+                                                 "easEnable":  false,
+                                                 "easType":  "",
+                                                 "easEventPort":  0,
+                                                 "easAncillaryPort":  0
+                                             },
+                                     "dynamicBranding":  false,
+                                     "twelveHourClock":  false,
+                                     "showAmPm":  false,
+                                     "laterPrograms":  0,
+                                     "programBlockSize":  0,
+                                     "listNumber":  0,
+                                     "blueprint":  null,
+                                     "baseband":  true,
+                                     "includeHyperThreading":  true,
+                                     "aes":  false,
+                                     "routerUpstream":  false,
+                                     "routerIp":  "",
+                                     "matroxBoardPresent":  false,
+                                     "matroxDevices":  [
+                                                           {
+                                                               "matroxDeviceGuid":  "00000000-0000-0000-0000-000000000000",
+                                                               "matroxDeviceIndex":  -1,
+                                                               "sfps":  [
+                                                                            {
+                                                                                "dataNic":  {
+                                                                                                "matroxDataNicDeviceName":  "Matrox Ethernet Adapter",
+                                                                                                "matroxDataNicIpv4Address":  "",
+                                                                                                "matroxDataNicIpv4Netmask":  "",
+                                                                                                "matroxDataNicIpv4Gateway":  ""
+                                                                                            },
+                                                                                "ptpNic":  {
+                                                                                               "matroxPtpNicIpv4Address":  "",
+                                                                                               "matroxPtpNicIpv4Netmask":  "",
+                                                                                               "matroxPtpNicIpv4Gateway":  ""
+                                                                                           }
+                                                                            },
+                                                                            {
+                                                                                "dataNic":  {
+                                                                                                "matroxDataNicDeviceName":  "Matrox Ethernet Adapter #2",
+                                                                                                "matroxDataNicIpv4Address":  "",
+                                                                                                "matroxDataNicIpv4Netmask":  "",
+                                                                                                "matroxDataNicIpv4Gateway":  ""
+                                                                                            },
+                                                                                "ptpNic":  {
+                                                                                               "matroxPtpNicIpv4Address":  "",
+                                                                                               "matroxPtpNicIpv4Netmask":  "",
+                                                                                               "matroxPtpNicIpv4Gateway":  ""
+                                                                                           }
+                                                                            }
+                                                                        ]
+                                                           }
+                                                       ],
+                                     "multiChannel":  false,
+                                     "automationType":  "Versio",
+                                     "masterControlEnabled":  false,
+                                     "storage":  {
+                                                     "storageType":  "Internal",
+                                                     "storageDomain":  "H3605",
+                                                     "storageDomainNodeNumber":  1,
+                                                     "storageDiskPath":  "D:\\LLM\\LLMMediaBase",
+                                                     "storageDiskSize":  250,
+                                                     "storageTimeCodeReader":  "PTPLOCAL",
+                                                     "storageGensanNetworkShare":  "",
+                                                     "mediaDirectory":  "Media",
+                                                     "storageOutputAspectRatio":  "1",
+                                                     "storageOutputAspectRatio1":  "1",
+                                                     "storageIpAddress":  "127.0.0.1",
+                                                     "storageIpAddress1":  "127.0.0.1",
+                                                     "storageIpAddress2":  "127.0.0.1",
+                                                     "storageIpAddress3":  "127.0.0.1",
+                                                     "storageIpSubnetMask":  "255.255.255.255",
+                                                     "storageIpSubnetMask1":  "255.255.255.255",
+                                                     "storageIpSubnetMask2":  "255.255.255.255",
+                                                     "storageIpSubnetMask3":  "255.255.255.255",
+                                                     "storageNetworkServer":  "",
+                                                     "storageNetworkServer1":  "",
+                                                     "storageNetworkServer2":  "",
+                                                     "storageNetworkServer3":  "",
+                                                     "storageNetDiskServer":  "",
+                                                     "storageNetDiskServer1":  "",
+                                                     "storageNetDiskServer2":  "",
+                                                     "storageNetDiskServer3":  "",
+                                                     "graphicsAssets":  null,
+                                                     "videoAssets":  null,
+                                                     "gateways":  [
+
+                                                                  ]
+                                                 },
+                                     "server":  {
+                                                    "serverDescription":  "wtl-mg1-mainsvc",
+                                                    "standalone":  false,
+                                                    "versioControlEnabled":  false,
+                                                    "masterControlEnabled":  true,
+                                                    "servicesServerIpAddress":  "wtl-mg1-mainsvc",
+                                                    "servicesServerUsername":  "Administrator",
+                                                    "servicesServerPassword":  "76492d1116743f0423413b16050a5345MgB8AFgAdwB6AHkAeQBiAFYAZAAxAHcATgBYAE0AVwAyAGEAbABZAFEAUABwAEEAPQA9AHwAMAAyAGIAZABlADAAYgA4ADAAYwBjADIAZQA2ADkANgA0ADAAMQAyAGMAMgA1AGEAMQA5ADcAMgAyADgANwA0AGMANQAwADQAYQA4AGEAYgA3ADUAYwAwADgAYwBhADQAZgBkADUAMgAxADkAYgBlADcAYgA3AGYAOAAzAGYANQA=",
+                                                    "systemName":  "wtl-mg1-mainsvc",
+                                                    "hermesIP":  "wtl-mg1-mainsvc",
+                                                    "hermesPort":  9872,
+                                                    "webSocketHost":  "wtl-mg1-mainsvc",
+                                                    "webSocketPort":  37036,
+                                                    "redundancyRouterIP":  null,
+                                                    "defaultLowResProxyStoragePath":  "http://wtl-mg1-mainsvc/CP/Proxies",
+                                                    "defaultLowResProxyCifsPath":  "\\\\wtl-mg1-mainsvc\\ProxyFiles",
+                                                    "defaultLowResProxyCifsUser":  "Administrator",
+                                                    "defaultLowResProxyCifsPassword":  "76492d1116743f0423413b16050a5345MgB8AFgAdwB6AHkAeQBiAFYAZAAxAHcATgBYAE0AVwAyAGEAbABZAFEAUABwAEEAPQA9AHwAMAAyAGIAZABlADAAYgA4ADAAYwBjADIAZQA2ADkANgA0ADAAMQAyAGMAMgA1AGEAMQA5ADcAMgAyADgANwA0AGMANQAwADQAYQA4AGEAYgA3ADUAYwAwADgAYwBhADQAZgBkADUAMgAxADkAYgBlADcAYgA3AGYAOAAzAGYANQA=",
+                                                    "versioContentAPIHost":  "[versioContentAPIHost]",
+                                                    "versioAutomationHost":  "[versioAutomationHost]",
+                                                    "versioRedundancyHost":  "[versioRedundancyHost]",
+                                                    "networkAdmin":  "Administrator",
+                                                    "networkAdminPassword":  "76492d1116743f0423413b16050a5345MgB8AFgAdwB6AHkAeQBiAFYAZAAxAHcATgBYAE0AVwAyAGEAbABZAFEAUABwAEEAPQA9AHwAMAAyAGIAZABlADAAYgA4ADAAYwBjADIAZQA2ADkANgA0ADAAMQAyAGMAMgA1AGEAMQA5ADcAMgAyADgANwA0AGMANQAwADQAYQA4AGEAYgA3ADUAYwAwADgAYwBhADQAZgBkADUAMgAxADkAYgBlADcAYgA3AGYAOAAzAGYANQA=",
+                                                    "networkManagerServerName":  null,
+                                                    "lanUsername":  null,
+                                                    "lanUserPassword":  null,
+                                                    "licenseServerHostname":  "137.237.134.36",
+                                                    "licenseServerPort":  15000,
+                                                    "zeniumServerHostname":  null,
+                                                    "dbHostname":  "[dbHostname]",
+                                                    "dbUsername":  "Administrator",
+                                                    "dbPassword":  "76492d1116743f0423413b16050a5345MgB8AFgAdwB6AHkAeQBiAFYAZAAxAHcATgBYAE0AVwAyAGEAbABZAFEAUABwAEEAPQA9AHwAMAAyAGIAZABlADAAYgA4ADAAYwBjADIAZQA2ADkANgA0ADAAMQAyAGMAMgA1AGEAMQA5ADcAMgAyADgANwA0AGMANQAwADQAYQA4AGEAYgA3ADUAYwAwADgAYwBhADQAZgBkADUAMgAxADkAYgBlADcAYgA3AGYAOAAzAGYANQA=",
+                                                    "dbSaPassword":  "76492d1116743f0423413b16050a5345MgB8ADcAQwArAGEANABPAGsAUAAvADAAaQA3ADYAbABQAFMAcABuAHoAVwBLAEEAPQA9AHwANQAyADQANwA1ADAAYgBmAGEAOQBjADMAOQAwAGYANwA5AGEANQBiADkAMQA3AGIANABiAGUAYwAyAGYAZABlADYAYwA1ADAAOQA3AGQAYwA3AGUAZgA2AGEAMgAzAGIAYwBlADAAMQA3AGIANwAyADIAMgBmADQAZQA3ADQAMwA=",
+                                                    "sqlServerUser":  "Administrator",
+                                                    "sqlServerPassword":  "76492d1116743f0423413b16050a5345MgB8ADEAOABmAHoASAA1AEEALwA2AHQAcABaAFkALwBhAFkARQBZAGIANwB5AFEAPQA9AHwAZgA0AGQAYgA3ADYANQAwADYAZAAwAGIANwA1ADkANQBiADYANQA3ADQAOABlADQAZgBkAGMAZgBiAGMAYwA3AGIAZgBkADYAZgA0ADMAMQAzADMANQAyADQAMAAyADQAOABkADEAMwBiAGMANgAwADQAZABlAGMAMABlADMAYwA=",
+                                                    "sqlServerName":  null,
+                                                    "heartbeat":  {
+                                                                      "heartbeatHost":  "[heartbeatHost]"
+                                                                  },
+                                                    "rabbitMQ":  {
+                                                                     "hostname":  "wtl-mg1-mainsvc",
+                                                                     "port":  5672,
+                                                                     "virtualHost":  "Versio",
+                                                                     "userName":  "admin",
+                                                                     "password":  "76492d1116743f0423413b16050a5345MgB8AE8AagBRAG0ATgBvAGYAcABoAHAAaQBqAEIAcwBUAEsANQBIADQAOAAvAGcAPQA9AHwAOAA4ADkAZABkADkANwBkADUAOQA5ADMAMAA4AGMAMwBhAGQAOQBiADUAOABjAGIAZQAyAGMAOQBhADgAOQBmADIAZQBkADQAZAAxADMAMABiADcANwA4AGQAZQAyADMANABlADEAZgA5AGQAZAAxAGEANwBlAGUAOABkAGQANgA="
+                                                                 },
+                                                    "workflow":  {
+                                                                     "enabled":  true,
+                                                                     "hostname":  "wtl-mg1-mainsvc",
+                                                                     "port":  9005,
+                                                                     "userName":  "Administrator",
+                                                                     "password":  "76492d1116743f0423413b16050a5345MgB8AFgAdwB6AHkAeQBiAFYAZAAxAHcATgBYAE0AVwAyAGEAbABZAFEAUABwAEEAPQA9AHwAMAAyAGIAZABlADAAYgA4ADAAYwBjADIAZQA2ADkANgA0ADAAMQAyAGMAMgA1AGEAMQA5ADcAMgAyADgANwA0AGMANQAwADQAYQA4AGEAYgA3ADUAYwAwADgAYwBhADQAZgBkADUAMgAxADkAYgBlADcAYgA3AGYAOAAzAGYANQA="
+                                                                 },
+                                                    "graphics":  {
+                                                                     "cifs":  {
+                                                                                  "path":  "\\\\wtl-mg1-mainsvc\\GraphicsContent",
+                                                                                  "userName":  "Administrator",
+                                                                                  "password":  "76492d1116743f0423413b16050a5345MgB8AFgAdwB6AHkAeQBiAFYAZAAxAHcATgBYAE0AVwAyAGEAbABZAFEAUABwAEEAPQA9AHwAMAAyAGIAZABlADAAYgA4ADAAYwBjADIAZQA2ADkANgA0ADAAMQAyAGMAMgA1AGEAMQA5ADcAMgAyADgANwA0AGMANQAwADQAYQA4AGEAYgA3ADUAYwAwADgAYwBhADQAZgBkADUAMgAxADkAYgBlADcAYgA3AGYAOAAzAGYANQA="
+                                                                              }
+                                                                 },
+                                                    "layout":  {
+                                                                   "cifs":  {
+                                                                                "path":  "\\\\wtl-mg1-mainsvc\\LayoutCache",
+                                                                                "userName":  "Administrator",
+                                                                                "password":  "76492d1116743f0423413b16050a5345MgB8AFgAdwB6AHkAeQBiAFYAZAAxAHcATgBYAE0AVwAyAGEAbABZAFEAUABwAEEAPQA9AHwAMAAyAGIAZABlADAAYgA4ADAAYwBjADIAZQA2ADkANgA0ADAAMQAyAGMAMgA1AGEAMQA5ADcAMgAyADgANwA0AGMANQAwADQAYQA4AGEAYgA3ADUAYwAwADgAYwBhADQAZgBkADUAMgAxADkAYgBlADcAYgA3AGYAOAAzAGYANQA="
+                                                                            }
+                                                               },
+                                                    "assets":  {
+                                                                   "cifs":  {
+                                                                                "path":  "\\\\wtl-mg1-mainsvc\\VideoStorage",
+                                                                                "userName":  "Administrator",
+                                                                                "password":  "76492d1116743f0423413b16050a5345MgB8AFgAdwB6AHkAeQBiAFYAZAAxAHcATgBYAE0AVwAyAGEAbABZAFEAUABwAEEAPQA9AHwAMAAyAGIAZABlADAAYgA4ADAAYwBjADIAZQA2ADkANgA0ADAAMQAyAGMAMgA1AGEAMQA5ADcAMgAyADgANwA0AGMANQAwADQAYQA4AGEAYgA3ADUAYwAwADgAYwBhADQAZgBkADUAMgAxADkAYgBlADcAYgA3AGYAOAAzAGYANQA="
+                                                                            }
+                                                               },
+                                                    "postgres":  {
+                                                                     "hostname":  "wtl-mg1-mainsvc",
+                                                                     "port":  5432,
+                                                                     "userName":  "postgres",
+                                                                     "password":  "76492d1116743f0423413b16050a5345MgB8AE4AMwBUACsAawBEAFMARABoAHIAbgBWAHEAYgAxADYAUwBxADMAZQAzAEEAPQA9AHwAYQA4AGMAZgAyAGQAYQAwADYANgA3ADYANwBlAGYAYwAyADgANgA2AGIAZAAyADQAZgBmADIAMABmADcAZAAzADkAZAA5AGYANgBiAGUAOQAzAGQAOQA5ADcAYQBhADMAYwBkADUAMABjAGQANAA2AGEAZAAzADEANAAzADkANwA="
+                                                                 },
+                                                    "ingest":  null,
+                                                    "masterControl":  {
+                                                                          "serverHostname":  "wtl-mg1-mainsvc",
+                                                                          "serverUsername":  "Administrator",
+                                                                          "serverPassword":  "76492d1116743f0423413b16050a5345MgB8AFgAdwB6AHkAeQBiAFYAZAAxAHcATgBYAE0AVwAyAGEAbABZAFEAUABwAEEAPQA9AHwAMAAyAGIAZABlADAAYgA4ADAAYwBjADIAZQA2ADkANgA0ADAAMQAyAGMAMgA1AGEAMQA5ADcAMgAyADgANwA0AGMANQAwADQAYQA4AGEAYgA3ADUAYwAwADgAYwBhADQAZgBkADUAMgAxADkAYgBlADcAYgA3AGYAOAAzAGYANQA="
+                                                                      },
+                                                    "transcode":  {
+                                                                      "serverType":  "Proxy Transcode Selenio Flex",
+                                                                      "managerHostName":  "wtl-mg1-mainsvc",
+                                                                      "cifs":  {
+                                                                                   "path":  "\\\\wtl-mg1-mainsvc\\ProxyBlueprint",
+                                                                                   "userName":  "Administrator",
+                                                                                   "password":  "76492d1116743f0423413b16050a5345MgB8AFgAdwB6AHkAeQBiAFYAZAAxAHcATgBYAE0AVwAyAGEAbABZAFEAUABwAEEAPQA9AHwAMAAyAGIAZABlADAAYgA4ADAAYwBjADIAZQA2ADkANgA0ADAAMQAyAGMAMgA1AGEAMQA5ADcAMgAyADgANwA0AGMANQAwADQAYQA4AGEAYgA3ADUAYwAwADgAYwBhADQAZgBkADUAMgAxADkAYgBlADcAYgA3AGYAOAAzAGYANQA="
+                                                                               }
+                                                                  },
+                                                    "jsonSchemaVersion":  "4.4.0.113"
+                                                },
+                                     "storageOption":  "Nexio",
+                                     "inputs":  [
+                                                    {
+                                                        "inputNumber":  0,
+                                                        "name":  null,
+                                                        "mode":  "NexioClip",
+                                                        "enableRedundantInput":  false,
+                                                        "inputKeyFillSource":  {
+                                                                                   "keyIp":  "",
+                                                                                   "keyPort":  0,
+                                                                                   "keyInterfaceIp":  null,
+                                                                                   "redundantKeyIp":  null,
+                                                                                   "redundantKeyPort":  0,
+                                                                                   "FillIp":  "",
+                                                                                   "FillPort":  0,
+                                                                                   "FillInterfaceIp":  null,
+                                                                                   "redundantFillIp":  null,
+                                                                                   "redundantFillPort":  0
+                                                                               },
+                                                        "inputSources":  [
+                                                                             {
+                                                                                 "ip":  "",
+                                                                                 "port":  0,
+                                                                                 "interfaceIp":  ""
+                                                                             }
+                                                                         ],
+                                                        "videoInputSource":  {
+                                                                                 "videoIp":  "",
+                                                                                 "videoPort":  0,
+                                                                                 "redundantVideoIp":  "",
+                                                                                 "redundantVideoPort":  0
+                                                                             },
+                                                        "audioInputSource":  {
+                                                                                 "audioMapping":  null,
+                                                                                 "inputAudioOverIPConfigurations":  {
+                                                                                                                        "audioIp1":  null,
+                                                                                                                        "audioPort1":  0,
+                                                                                                                        "audioIp2":  null,
+                                                                                                                        "audioPort2":  0,
+                                                                                                                        "redundantAudioIp1":  null,
+                                                                                                                        "redundantAudioPort1":  0,
+                                                                                                                        "redundantAudioIp2":  null,
+                                                                                                                        "redundantAudioPort2":  0
+                                                                                                                    },
+                                                                                 "dolbyE":  {
+                                                                                                "allowDolbyE":  false,
+                                                                                                "channelPair":  null,
+                                                                                                "decodedChannelsPosition":  null
+                                                                                            }
+                                                                             },
+                                                        "ancillaryInputSource":  {
+                                                                                     "ancillaryIp":  "",
+                                                                                     "ancillaryPort":  0,
+                                                                                     "redundantAncillaryIp":  "",
+                                                                                     "redundantAncillaryPort":  0
+                                                                                 },
+                                                        "videoPid":  0,
+                                                        "audioPid":  0,
+                                                        "routerDestination":  "",
+                                                        "imageOverlayPath":  "",
+                                                        "keySignalRouterDestination":  "",
+                                                        "fillSignalRouterDestination":  "",
+                                                        "audioTag":  {
+                                                                         "enableWatermarking":  false,
+                                                                         "audioTagId":  0
+                                                                     }
+                                                    },
+                                                    {
+                                                        "inputNumber":  1,
+                                                        "name":  null,
+                                                        "mode":  "NexioClip",
+                                                        "enableRedundantInput":  false,
+                                                        "inputKeyFillSource":  {
+                                                                                   "keyIp":  "",
+                                                                                   "keyPort":  0,
+                                                                                   "keyInterfaceIp":  null,
+                                                                                   "redundantKeyIp":  null,
+                                                                                   "redundantKeyPort":  0,
+                                                                                   "FillIp":  "",
+                                                                                   "FillPort":  0,
+                                                                                   "FillInterfaceIp":  null,
+                                                                                   "redundantFillIp":  null,
+                                                                                   "redundantFillPort":  0
+                                                                               },
+                                                        "inputSources":  [
+                                                                             {
+                                                                                 "ip":  "",
+                                                                                 "port":  0,
+                                                                                 "interfaceIp":  ""
+                                                                             }
+                                                                         ],
+                                                        "videoInputSource":  {
+                                                                                 "videoIp":  "",
+                                                                                 "videoPort":  0,
+                                                                                 "redundantVideoIp":  "",
+                                                                                 "redundantVideoPort":  0
+                                                                             },
+                                                        "audioInputSource":  {
+                                                                                 "audioMapping":  null,
+                                                                                 "inputAudioOverIPConfigurations":  {
+                                                                                                                        "audioIp1":  null,
+                                                                                                                        "audioPort1":  0,
+                                                                                                                        "audioIp2":  null,
+                                                                                                                        "audioPort2":  0,
+                                                                                                                        "redundantAudioIp1":  null,
+                                                                                                                        "redundantAudioPort1":  0,
+                                                                                                                        "redundantAudioIp2":  null,
+                                                                                                                        "redundantAudioPort2":  0
+                                                                                                                    },
+                                                                                 "dolbyE":  {
+                                                                                                "allowDolbyE":  false,
+                                                                                                "channelPair":  null,
+                                                                                                "decodedChannelsPosition":  null
+                                                                                            }
+                                                                             },
+                                                        "ancillaryInputSource":  {
+                                                                                     "ancillaryIp":  "",
+                                                                                     "ancillaryPort":  0,
+                                                                                     "redundantAncillaryIp":  "",
+                                                                                     "redundantAncillaryPort":  0
+                                                                                 },
+                                                        "videoPid":  0,
+                                                        "audioPid":  0,
+                                                        "routerDestination":  "",
+                                                        "imageOverlayPath":  "",
+                                                        "keySignalRouterDestination":  "",
+                                                        "fillSignalRouterDestination":  "",
+                                                        "audioTag":  {
+                                                                         "enableWatermarking":  false,
+                                                                         "audioTagId":  0
+                                                                     }
+                                                    },
+                                                    {
+                                                        "inputNumber":  2,
+                                                        "name":  null,
+                                                        "mode":  "Nexio",
+                                                        "enableRedundantInput":  false,
+                                                        "inputKeyFillSource":  {
+                                                                                   "keyIp":  "",
+                                                                                   "keyPort":  0,
+                                                                                   "keyInterfaceIp":  null,
+                                                                                   "redundantKeyIp":  null,
+                                                                                   "redundantKeyPort":  0,
+                                                                                   "FillIp":  "",
+                                                                                   "FillPort":  0,
+                                                                                   "FillInterfaceIp":  null,
+                                                                                   "redundantFillIp":  null,
+                                                                                   "redundantFillPort":  0
+                                                                               },
+                                                        "inputSources":  [
+                                                                             {
+                                                                                 "ip":  "",
+                                                                                 "port":  0,
+                                                                                 "interfaceIp":  ""
+                                                                             }
+                                                                         ],
+                                                        "videoInputSource":  {
+                                                                                 "videoIp":  "",
+                                                                                 "videoPort":  0,
+                                                                                 "redundantVideoIp":  "",
+                                                                                 "redundantVideoPort":  0
+                                                                             },
+                                                        "audioInputSource":  {
+                                                                                 "audioMapping":  null,
+                                                                                 "inputAudioOverIPConfigurations":  {
+                                                                                                                        "audioIp1":  null,
+                                                                                                                        "audioPort1":  0,
+                                                                                                                        "audioIp2":  null,
+                                                                                                                        "audioPort2":  0,
+                                                                                                                        "redundantAudioIp1":  null,
+                                                                                                                        "redundantAudioPort1":  0,
+                                                                                                                        "redundantAudioIp2":  null,
+                                                                                                                        "redundantAudioPort2":  0
+                                                                                                                    },
+                                                                                 "dolbyE":  {
+                                                                                                "allowDolbyE":  false,
+                                                                                                "channelPair":  null,
+                                                                                                "decodedChannelsPosition":  null
+                                                                                            }
+                                                                             },
+                                                        "ancillaryInputSource":  {
+                                                                                     "ancillaryIp":  "",
+                                                                                     "ancillaryPort":  0,
+                                                                                     "redundantAncillaryIp":  "",
+                                                                                     "redundantAncillaryPort":  0
+                                                                                 },
+                                                        "videoPid":  0,
+                                                        "audioPid":  0,
+                                                        "routerDestination":  "",
+                                                        "imageOverlayPath":  "",
+                                                        "keySignalRouterDestination":  "",
+                                                        "fillSignalRouterDestination":  "",
+                                                        "audioTag":  {
+                                                                         "enableWatermarking":  false,
+                                                                         "audioTagId":  0
+                                                                     }
+                                                    },
+                                                    {
+                                                        "inputNumber":  3,
+                                                        "name":  null,
+                                                        "mode":  "Nexio",
+                                                        "enableRedundantInput":  false,
+                                                        "inputKeyFillSource":  {
+                                                                                   "keyIp":  "",
+                                                                                   "keyPort":  0,
+                                                                                   "keyInterfaceIp":  null,
+                                                                                   "redundantKeyIp":  null,
+                                                                                   "redundantKeyPort":  0,
+                                                                                   "FillIp":  "",
+                                                                                   "FillPort":  0,
+                                                                                   "FillInterfaceIp":  null,
+                                                                                   "redundantFillIp":  null,
+                                                                                   "redundantFillPort":  0
+                                                                               },
+                                                        "inputSources":  [
+                                                                             {
+                                                                                 "ip":  "",
+                                                                                 "port":  0,
+                                                                                 "interfaceIp":  ""
+                                                                             }
+                                                                         ],
+                                                        "videoInputSource":  {
+                                                                                 "videoIp":  "",
+                                                                                 "videoPort":  0,
+                                                                                 "redundantVideoIp":  "",
+                                                                                 "redundantVideoPort":  0
+                                                                             },
+                                                        "audioInputSource":  {
+                                                                                 "audioMapping":  null,
+                                                                                 "inputAudioOverIPConfigurations":  {
+                                                                                                                        "audioIp1":  null,
+                                                                                                                        "audioPort1":  0,
+                                                                                                                        "audioIp2":  null,
+                                                                                                                        "audioPort2":  0,
+                                                                                                                        "redundantAudioIp1":  null,
+                                                                                                                        "redundantAudioPort1":  0,
+                                                                                                                        "redundantAudioIp2":  null,
+                                                                                                                        "redundantAudioPort2":  0
+                                                                                                                    },
+                                                                                 "dolbyE":  {
+                                                                                                "allowDolbyE":  false,
+                                                                                                "channelPair":  null,
+                                                                                                "decodedChannelsPosition":  null
+                                                                                            }
+                                                                             },
+                                                        "ancillaryInputSource":  {
+                                                                                     "ancillaryIp":  "",
+                                                                                     "ancillaryPort":  0,
+                                                                                     "redundantAncillaryIp":  "",
+                                                                                     "redundantAncillaryPort":  0
+                                                                                 },
+                                                        "videoPid":  0,
+                                                        "audioPid":  0,
+                                                        "routerDestination":  "",
+                                                        "imageOverlayPath":  "",
+                                                        "keySignalRouterDestination":  "",
+                                                        "fillSignalRouterDestination":  "",
+                                                        "audioTag":  {
+                                                                         "enableWatermarking":  false,
+                                                                         "audioTagId":  0
+                                                                     }
+                                                    },
+                                                    {
+                                                        "inputNumber":  4,
+                                                        "name":  null,
+                                                        "mode":  "Black",
+                                                        "enableRedundantInput":  false,
+                                                        "inputKeyFillSource":  {
+                                                                                   "keyIp":  "",
+                                                                                   "keyPort":  0,
+                                                                                   "keyInterfaceIp":  null,
+                                                                                   "redundantKeyIp":  null,
+                                                                                   "redundantKeyPort":  0,
+                                                                                   "FillIp":  "",
+                                                                                   "FillPort":  0,
+                                                                                   "FillInterfaceIp":  null,
+                                                                                   "redundantFillIp":  null,
+                                                                                   "redundantFillPort":  0
+                                                                               },
+                                                        "inputSources":  [
+                                                                             {
+                                                                                 "ip":  "",
+                                                                                 "port":  0,
+                                                                                 "interfaceIp":  ""
+                                                                             }
+                                                                         ],
+                                                        "videoInputSource":  {
+                                                                                 "videoIp":  "",
+                                                                                 "videoPort":  0,
+                                                                                 "redundantVideoIp":  "",
+                                                                                 "redundantVideoPort":  0
+                                                                             },
+                                                        "audioInputSource":  {
+                                                                                 "audioMapping":  null,
+                                                                                 "inputAudioOverIPConfigurations":  {
+                                                                                                                        "audioIp1":  null,
+                                                                                                                        "audioPort1":  0,
+                                                                                                                        "audioIp2":  null,
+                                                                                                                        "audioPort2":  0,
+                                                                                                                        "redundantAudioIp1":  null,
+                                                                                                                        "redundantAudioPort1":  0,
+                                                                                                                        "redundantAudioIp2":  null,
+                                                                                                                        "redundantAudioPort2":  0
+                                                                                                                    },
+                                                                                 "dolbyE":  {
+                                                                                                "allowDolbyE":  false,
+                                                                                                "channelPair":  null,
+                                                                                                "decodedChannelsPosition":  null
+                                                                                            }
+                                                                             },
+                                                        "ancillaryInputSource":  {
+                                                                                     "ancillaryIp":  "",
+                                                                                     "ancillaryPort":  0,
+                                                                                     "redundantAncillaryIp":  "",
+                                                                                     "redundantAncillaryPort":  0
+                                                                                 },
+                                                        "videoPid":  0,
+                                                        "audioPid":  0,
+                                                        "routerDestination":  "",
+                                                        "imageOverlayPath":  "",
+                                                        "keySignalRouterDestination":  "",
+                                                        "fillSignalRouterDestination":  "",
+                                                        "audioTag":  {
+                                                                         "enableWatermarking":  false,
+                                                                         "audioTagId":  0
+                                                                     }
+                                                    }
+                                                ],
+                                     "outputs":  [
+                                                     {
+                                                         "outputNumber":  0,
+                                                         "name":  "O1",
+                                                         "mode":  "SDI",
+                                                         "setAsPresetGraphicsOutput":  false,
+                                                         "tsPlugin":  "",
+                                                         "vitc":  false,
+                                                         "vitcBasedOn":  "",
+                                                         "enableRedundantOutput":  false,
+                                                         "outputDestinations":  [
+                                                                                    {
+                                                                                        "ip":  "",
+                                                                                        "port":  0,
+                                                                                        "videoIp":  "",
+                                                                                        "videoPort":  0,
+                                                                                        "interfaceIp":  "",
+                                                                                        "redundantVideoIp":  "",
+                                                                                        "redundantVideoPort":  0,
+                                                                                        "web":  null,
+                                                                                        "outputAudioOverIPConfigurations":  {
+                                                                                                                                "audioIp1":  "",
+                                                                                                                                "audioPort1":  0,
+                                                                                                                                "audioIp2":  "",
+                                                                                                                                "audioPort2":  0,
+                                                                                                                                "redundantAudioIp1":  "",
+                                                                                                                                "redundantAudioPort1":  0,
+                                                                                                                                "redundantAudioIp2":  "",
+                                                                                                                                "redundantAudioPort2":  0
+                                                                                                                            },
+                                                                                        "ancillaryIp":  "",
+                                                                                        "ancillaryPort":  0,
+                                                                                        "redundantAncillaryIp":  "",
+                                                                                        "redundantAncillaryPort":  0
+                                                                                    }
+                                                                                ],
+                                                         "bitRateBps":  0,
+                                                         "aspectRatioControl":  false,
+                                                         "scte35":  {
+                                                                        "insert":  false,
+                                                                        "pid":  0
+                                                                    },
+                                                         "scte35CuePointsSink":  {
+                                                                                     "cuePointsSink":  false,
+                                                                                     "cuePointsSinkPort":  0
+                                                                                 },
+                                                         "scte104":  {
+                                                                         "insert":  false,
+                                                                         "line":  0
+                                                                     },
+                                                         "video":  {
+                                                                       "videoGuid":  "625240df-bcd5-4569-bec2-a8d47f832089",
+                                                                       "profileName":  null,
+                                                                       "referencedProfileName":  "v1",
+                                                                       "compressed":  false,
+                                                                       "videoStandard":  "NTSC",
+                                                                       "resolution":  "1080i",
+                                                                       "frameRate":  29.97,
+                                                                       "codec":  "",
+                                                                       "videoPid":  0,
+                                                                       "bitRateBps":  0,
+                                                                       "HDR":  false
+                                                                   },
+                                                         "audios":  [
+                                                                        {
+                                                                            "audioGuid":  "87a099e8-6d1a-4db6-bfa6-8ba6af7aba9e",
+                                                                            "profileName":  "a1",
+                                                                            "referencedProfileName":  null,
+                                                                            "compressed":  false,
+                                                                            "audioStandard":  "PCM",
+                                                                            "normalize":  false,
+                                                                            "mapping":  "2 Stereo",
+                                                                            "audioPid":  0,
+                                                                            "dialNormDb":  0,
+                                                                            "bitRateBps":  0,
+                                                                            "speakerChannels":  "2",
+                                                                            "linearAcousticPort1":  0,
+                                                                            "linearAcousticPort2":  0,
+                                                                            "pesAuNumber":  0,
+                                                                            "nielsen":  {
+                                                                                            "enable":  false
+                                                                                        }
+                                                                        }
+                                                                    ],
+                                                         "ancillaryData":  {
+                                                                               "enable":  true,
+                                                                               "pid":  0,
+                                                                               "caption":  {
+                                                                                               "ARIB":  false,
+                                                                                               "sourceFromClip":  true,
+                                                                                               "configureCentralService":  false,
+                                                                                               "enableOpenCaptions":  false,
+                                                                                               "DvbVbiDataPid":  0,
+                                                                                               "sourceType":  "708",
+                                                                                               "lineNumber":  12,
+                                                                                               "dvbType":  "",
+                                                                                               "format_608_708":  "",
+                                                                                               "fromFile":  false,
+                                                                                               "fileServer":  "",
+                                                                                               "backupFileServer":  "",
+                                                                                               "languages":  [
+                                                                                                                 {
+                                                                                                                     "languageName":  "",
+                                                                                                                     "iso639_2Language":  "",
+                                                                                                                     "iso639_1Language":  "",
+                                                                                                                     "customLanguageCode":  "",
+                                                                                                                     "customLanguageName":  "",
+                                                                                                                     "fontSize":  0,
+                                                                                                                     "fontForeground":  "",
+                                                                                                                     "fontBackground":  "",
+                                                                                                                     "backgroundRenderMode":  "",
+                                                                                                                     "textToBorderDistance":  0.0,
+                                                                                                                     "style":  "",
+                                                                                                                     "subtitleRegion":  "",
+                                                                                                                     "font":  "",
+                                                                                                                     "horizontalTextJustification":  "",
+                                                                                                                     "verticalTextJustification":  "",
+                                                                                                                     "overrideRegionTop":  0,
+                                                                                                                     "overrideRegionBottom":  0,
+                                                                                                                     "overrideRegionLeft":  0,
+                                                                                                                     "overrideRegionRight":  0,
+                                                                                                                     "forceLinesAsSeparateRegions":  false,
+                                                                                                                     "forceLinesStartLocation":  "",
+                                                                                                                     "forceLinesLineHeight":  0,
+                                                                                                                     "forceLinesInterRowGap":  0,
+                                                                                                                     "pid":  0,
+                                                                                                                     "fontFiles":  [
+
+                                                                                                                                   ]
+                                                                                                                 }
+                                                                                                             ]
+                                                                                           },
+                                                                               "eegIcap":  {
+                                                                                               "enable":  false,
+                                                                                               "company":  "",
+                                                                                               "username":  "",
+                                                                                               "password":  "",
+                                                                                               "enableCCGateway":  false,
+                                                                                               "ccGatewayPrimary":  "",
+                                                                                               "ccGatewayBackup":  ""
+                                                                                           }
+                                                                           }
+                                                     },
+                                                     {
+                                                         "outputNumber":  1,
+                                                         "name":  "O2",
+                                                         "mode":  "SDI",
+                                                         "setAsPresetGraphicsOutput":  false,
+                                                         "tsPlugin":  "",
+                                                         "vitc":  false,
+                                                         "vitcBasedOn":  "",
+                                                         "enableRedundantOutput":  false,
+                                                         "outputDestinations":  [
+                                                                                    {
+                                                                                        "ip":  "",
+                                                                                        "port":  0,
+                                                                                        "videoIp":  "",
+                                                                                        "videoPort":  0,
+                                                                                        "interfaceIp":  "",
+                                                                                        "redundantVideoIp":  "",
+                                                                                        "redundantVideoPort":  0,
+                                                                                        "web":  null,
+                                                                                        "outputAudioOverIPConfigurations":  {
+                                                                                                                                "audioIp1":  "",
+                                                                                                                                "audioPort1":  0,
+                                                                                                                                "audioIp2":  "",
+                                                                                                                                "audioPort2":  0,
+                                                                                                                                "redundantAudioIp1":  "",
+                                                                                                                                "redundantAudioPort1":  0,
+                                                                                                                                "redundantAudioIp2":  "",
+                                                                                                                                "redundantAudioPort2":  0
+                                                                                                                            },
+                                                                                        "ancillaryIp":  "",
+                                                                                        "ancillaryPort":  0,
+                                                                                        "redundantAncillaryIp":  "",
+                                                                                        "redundantAncillaryPort":  0
+                                                                                    }
+                                                                                ],
+                                                         "bitRateBps":  0,
+                                                         "aspectRatioControl":  false,
+                                                         "scte35":  {
+                                                                        "insert":  false,
+                                                                        "pid":  0
+                                                                    },
+                                                         "scte35CuePointsSink":  {
+                                                                                     "cuePointsSink":  false,
+                                                                                     "cuePointsSinkPort":  0
+                                                                                 },
+                                                         "scte104":  {
+                                                                         "insert":  false,
+                                                                         "line":  0
+                                                                     },
+                                                         "video":  {
+                                                                       "videoGuid":  "5bf743c4-6d54-4b2b-8efe-64c6912d7d55",
+                                                                       "profileName":  null,
+                                                                       "referencedProfileName":  "v2",
+                                                                       "compressed":  false,
+                                                                       "videoStandard":  "NTSC",
+                                                                       "resolution":  "1080i",
+                                                                       "frameRate":  29.97,
+                                                                       "codec":  "",
+                                                                       "videoPid":  0,
+                                                                       "bitRateBps":  0,
+                                                                       "HDR":  false
+                                                                   },
+                                                         "audios":  [
+                                                                        {
+                                                                            "audioGuid":  "03889672-926c-4bc2-9023-935df4ba276e",
+                                                                            "profileName":  "a2",
+                                                                            "referencedProfileName":  null,
+                                                                            "compressed":  false,
+                                                                            "audioStandard":  "PCM",
+                                                                            "normalize":  false,
+                                                                            "mapping":  "2 Stereo",
+                                                                            "audioPid":  0,
+                                                                            "dialNormDb":  0,
+                                                                            "bitRateBps":  0,
+                                                                            "speakerChannels":  "2",
+                                                                            "linearAcousticPort1":  0,
+                                                                            "linearAcousticPort2":  0,
+                                                                            "pesAuNumber":  0,
+                                                                            "nielsen":  {
+                                                                                            "enable":  false
+                                                                                        }
+                                                                        }
+                                                                    ],
+                                                         "ancillaryData":  {
+                                                                               "enable":  true,
+                                                                               "pid":  0,
+                                                                               "caption":  {
+                                                                                               "ARIB":  false,
+                                                                                               "sourceFromClip":  true,
+                                                                                               "configureCentralService":  false,
+                                                                                               "enableOpenCaptions":  false,
+                                                                                               "DvbVbiDataPid":  0,
+                                                                                               "sourceType":  "708",
+                                                                                               "lineNumber":  12,
+                                                                                               "dvbType":  "",
+                                                                                               "format_608_708":  "",
+                                                                                               "fromFile":  false,
+                                                                                               "fileServer":  "",
+                                                                                               "backupFileServer":  "",
+                                                                                               "languages":  [
+                                                                                                                 {
+                                                                                                                     "languageName":  "",
+                                                                                                                     "iso639_2Language":  "",
+                                                                                                                     "iso639_1Language":  "",
+                                                                                                                     "customLanguageCode":  "",
+                                                                                                                     "customLanguageName":  "",
+                                                                                                                     "fontSize":  0,
+                                                                                                                     "fontForeground":  "",
+                                                                                                                     "fontBackground":  "",
+                                                                                                                     "backgroundRenderMode":  "",
+                                                                                                                     "textToBorderDistance":  0.0,
+                                                                                                                     "style":  "",
+                                                                                                                     "subtitleRegion":  "",
+                                                                                                                     "font":  "",
+                                                                                                                     "horizontalTextJustification":  "",
+                                                                                                                     "verticalTextJustification":  "",
+                                                                                                                     "overrideRegionTop":  0,
+                                                                                                                     "overrideRegionBottom":  0,
+                                                                                                                     "overrideRegionLeft":  0,
+                                                                                                                     "overrideRegionRight":  0,
+                                                                                                                     "forceLinesAsSeparateRegions":  false,
+                                                                                                                     "forceLinesStartLocation":  "",
+                                                                                                                     "forceLinesLineHeight":  0,
+                                                                                                                     "forceLinesInterRowGap":  0,
+                                                                                                                     "pid":  0,
+                                                                                                                     "fontFiles":  [
+
+                                                                                                                                   ]
+                                                                                                                 }
+                                                                                                             ]
+                                                                                           },
+                                                                               "eegIcap":  {
+                                                                                               "enable":  false,
+                                                                                               "company":  "",
+                                                                                               "username":  "",
+                                                                                               "password":  "",
+                                                                                               "enableCCGateway":  false,
+                                                                                               "ccGatewayPrimary":  "",
+                                                                                               "ccGatewayBackup":  ""
+                                                                                           }
+                                                                           }
+                                                     },
+                                                     {
+                                                         "outputNumber":  2,
+                                                         "name":  "Preset",
+                                                         "mode":  "SDI",
+                                                         "setAsPresetGraphicsOutput":  true,
+                                                         "tsPlugin":  "",
+                                                         "vitc":  false,
+                                                         "vitcBasedOn":  "",
+                                                         "enableRedundantOutput":  false,
+                                                         "outputDestinations":  [
+                                                                                    {
+                                                                                        "ip":  "",
+                                                                                        "port":  0,
+                                                                                        "videoIp":  "",
+                                                                                        "videoPort":  0,
+                                                                                        "interfaceIp":  "",
+                                                                                        "redundantVideoIp":  "",
+                                                                                        "redundantVideoPort":  0,
+                                                                                        "web":  null,
+                                                                                        "outputAudioOverIPConfigurations":  {
+                                                                                                                                "audioIp1":  "",
+                                                                                                                                "audioPort1":  0,
+                                                                                                                                "audioIp2":  "",
+                                                                                                                                "audioPort2":  0,
+                                                                                                                                "redundantAudioIp1":  "",
+                                                                                                                                "redundantAudioPort1":  0,
+                                                                                                                                "redundantAudioIp2":  "",
+                                                                                                                                "redundantAudioPort2":  0
+                                                                                                                            },
+                                                                                        "ancillaryIp":  "",
+                                                                                        "ancillaryPort":  0,
+                                                                                        "redundantAncillaryIp":  "",
+                                                                                        "redundantAncillaryPort":  0
+                                                                                    }
+                                                                                ],
+                                                         "bitRateBps":  0,
+                                                         "aspectRatioControl":  false,
+                                                         "scte35":  {
+                                                                        "insert":  false,
+                                                                        "pid":  0
+                                                                    },
+                                                         "scte35CuePointsSink":  {
+                                                                                     "cuePointsSink":  false,
+                                                                                     "cuePointsSinkPort":  0
+                                                                                 },
+                                                         "scte104":  {
+                                                                         "insert":  false,
+                                                                         "line":  0
+                                                                     },
+                                                         "video":  {
+                                                                       "videoGuid":  "cf2ed24f-fffa-4696-816a-8d3aaf499eb3",
+                                                                       "profileName":  null,
+                                                                       "referencedProfileName":  "pv1",
+                                                                       "compressed":  false,
+                                                                       "videoStandard":  "NTSC",
+                                                                       "resolution":  "1080i",
+                                                                       "frameRate":  29.97,
+                                                                       "codec":  "",
+                                                                       "videoPid":  0,
+                                                                       "bitRateBps":  0,
+                                                                       "HDR":  false
+                                                                   },
+                                                         "audios":  [
+                                                                        {
+                                                                            "audioGuid":  "6483af0a-0421-4d7e-8e91-afcc487e6500",
+                                                                            "profileName":  "pa1",
+                                                                            "referencedProfileName":  null,
+                                                                            "compressed":  false,
+                                                                            "audioStandard":  "PCM",
+                                                                            "normalize":  false,
+                                                                            "mapping":  "2 Stereo",
+                                                                            "audioPid":  0,
+                                                                            "dialNormDb":  0,
+                                                                            "bitRateBps":  0,
+                                                                            "speakerChannels":  "2",
+                                                                            "linearAcousticPort1":  0,
+                                                                            "linearAcousticPort2":  0,
+                                                                            "pesAuNumber":  0,
+                                                                            "nielsen":  {
+                                                                                            "enable":  false
+                                                                                        }
+                                                                        }
+                                                                    ],
+                                                         "ancillaryData":  {
+                                                                               "enable":  false,
+                                                                               "pid":  0,
+                                                                               "caption":  {
+                                                                                               "ARIB":  false,
+                                                                                               "sourceFromClip":  false,
+                                                                                               "configureCentralService":  false,
+                                                                                               "enableOpenCaptions":  false,
+                                                                                               "DvbVbiDataPid":  0,
+                                                                                               "sourceType":  "",
+                                                                                               "lineNumber":  0,
+                                                                                               "dvbType":  "",
+                                                                                               "format_608_708":  "",
+                                                                                               "fromFile":  false,
+                                                                                               "fileServer":  "",
+                                                                                               "backupFileServer":  "",
+                                                                                               "languages":  [
+                                                                                                                 {
+                                                                                                                     "languageName":  "",
+                                                                                                                     "iso639_2Language":  "",
+                                                                                                                     "iso639_1Language":  "",
+                                                                                                                     "customLanguageCode":  "",
+                                                                                                                     "customLanguageName":  "",
+                                                                                                                     "fontSize":  0,
+                                                                                                                     "fontForeground":  "",
+                                                                                                                     "fontBackground":  "",
+                                                                                                                     "backgroundRenderMode":  "",
+                                                                                                                     "textToBorderDistance":  0.0,
+                                                                                                                     "style":  "",
+                                                                                                                     "subtitleRegion":  "",
+                                                                                                                     "font":  "",
+                                                                                                                     "horizontalTextJustification":  "",
+                                                                                                                     "verticalTextJustification":  "",
+                                                                                                                     "overrideRegionTop":  0,
+                                                                                                                     "overrideRegionBottom":  0,
+                                                                                                                     "overrideRegionLeft":  0,
+                                                                                                                     "overrideRegionRight":  0,
+                                                                                                                     "forceLinesAsSeparateRegions":  false,
+                                                                                                                     "forceLinesStartLocation":  "",
+                                                                                                                     "forceLinesLineHeight":  0,
+                                                                                                                     "forceLinesInterRowGap":  0,
+                                                                                                                     "pid":  0,
+                                                                                                                     "fontFiles":  [
+
+                                                                                                                                   ]
+                                                                                                                 }
+                                                                                                             ]
+                                                                                           },
+                                                                               "eegIcap":  {
+                                                                                               "enable":  false,
+                                                                                               "company":  "",
+                                                                                               "username":  "",
+                                                                                               "password":  "",
+                                                                                               "enableCCGateway":  false,
+                                                                                               "ccGatewayPrimary":  "",
+                                                                                               "ccGatewayBackup":  ""
+                                                                                           }
+                                                                           }
+                                                     },
+                                                     {
+                                                         "outputNumber":  3,
+                                                         "name":  "MCP",
+                                                         "mode":  "Master Control Preview",
+                                                         "setAsPresetGraphicsOutput":  false,
+                                                         "tsPlugin":  "",
+                                                         "vitc":  false,
+                                                         "vitcBasedOn":  "",
+                                                         "enableRedundantOutput":  false,
+                                                         "outputDestinations":  [
+                                                                                    {
+                                                                                        "ip":  "",
+                                                                                        "port":  0,
+                                                                                        "videoIp":  "",
+                                                                                        "videoPort":  0,
+                                                                                        "interfaceIp":  "",
+                                                                                        "redundantVideoIp":  "",
+                                                                                        "redundantVideoPort":  0,
+                                                                                        "web":  null,
+                                                                                        "outputAudioOverIPConfigurations":  {
+                                                                                                                                "audioIp1":  "",
+                                                                                                                                "audioPort1":  0,
+                                                                                                                                "audioIp2":  "",
+                                                                                                                                "audioPort2":  0,
+                                                                                                                                "redundantAudioIp1":  "",
+                                                                                                                                "redundantAudioPort1":  0,
+                                                                                                                                "redundantAudioIp2":  "",
+                                                                                                                                "redundantAudioPort2":  0
+                                                                                                                            },
+                                                                                        "ancillaryIp":  "",
+                                                                                        "ancillaryPort":  0,
+                                                                                        "redundantAncillaryIp":  "",
+                                                                                        "redundantAncillaryPort":  0
+                                                                                    }
+                                                                                ],
+                                                         "bitRateBps":  0,
+                                                         "aspectRatioControl":  false,
+                                                         "scte35":  {
+                                                                        "insert":  false,
+                                                                        "pid":  0
+                                                                    },
+                                                         "scte35CuePointsSink":  {
+                                                                                     "cuePointsSink":  false,
+                                                                                     "cuePointsSinkPort":  0
+                                                                                 },
+                                                         "scte104":  {
+                                                                         "insert":  false,
+                                                                         "line":  0
+                                                                     },
+                                                         "video":  {
+                                                                       "videoGuid":  "a9563aa6-e99b-4063-898b-b2c96f7c7a34",
+                                                                       "profileName":  null,
+                                                                       "referencedProfileName":  "pv1",
+                                                                       "compressed":  false,
+                                                                       "videoStandard":  "NTSC",
+                                                                       "resolution":  null,
+                                                                       "frameRate":  0.0,
+                                                                       "codec":  "",
+                                                                       "videoPid":  0,
+                                                                       "bitRateBps":  0,
+                                                                       "HDR":  false
+                                                                   },
+                                                         "audios":  [
+                                                                        {
+                                                                            "audioGuid":  "2d5a32b3-90cc-437d-b0e6-c057f71cb85d",
+                                                                            "profileName":  "pa1",
+                                                                            "referencedProfileName":  null,
+                                                                            "compressed":  false,
+                                                                            "audioStandard":  null,
+                                                                            "normalize":  false,
+                                                                            "mapping":  null,
+                                                                            "audioPid":  18,
+                                                                            "dialNormDb":  0,
+                                                                            "bitRateBps":  0,
+                                                                            "speakerChannels":  null,
+                                                                            "linearAcousticPort1":  7300,
+                                                                            "linearAcousticPort2":  7301,
+                                                                            "pesAuNumber":  5,
+                                                                            "nielsen":  {
+                                                                                            "enable":  false
+                                                                                        }
+                                                                        }
+                                                                    ],
+                                                         "ancillaryData":  {
+                                                                               "enable":  false,
+                                                                               "pid":  0,
+                                                                               "caption":  {
+                                                                                               "ARIB":  false,
+                                                                                               "sourceFromClip":  false,
+                                                                                               "configureCentralService":  false,
+                                                                                               "enableOpenCaptions":  false,
+                                                                                               "DvbVbiDataPid":  0,
+                                                                                               "sourceType":  "",
+                                                                                               "lineNumber":  0,
+                                                                                               "dvbType":  "",
+                                                                                               "format_608_708":  "",
+                                                                                               "fromFile":  false,
+                                                                                               "fileServer":  "",
+                                                                                               "backupFileServer":  "",
+                                                                                               "languages":  [
+                                                                                                                 {
+                                                                                                                     "languageName":  "",
+                                                                                                                     "iso639_2Language":  "",
+                                                                                                                     "iso639_1Language":  "",
+                                                                                                                     "customLanguageCode":  "",
+                                                                                                                     "customLanguageName":  "",
+                                                                                                                     "fontSize":  0,
+                                                                                                                     "fontForeground":  "",
+                                                                                                                     "fontBackground":  "",
+                                                                                                                     "backgroundRenderMode":  "",
+                                                                                                                     "textToBorderDistance":  0.0,
+                                                                                                                     "style":  "",
+                                                                                                                     "subtitleRegion":  "",
+                                                                                                                     "font":  "",
+                                                                                                                     "horizontalTextJustification":  "",
+                                                                                                                     "verticalTextJustification":  "",
+                                                                                                                     "overrideRegionTop":  0,
+                                                                                                                     "overrideRegionBottom":  0,
+                                                                                                                     "overrideRegionLeft":  0,
+                                                                                                                     "overrideRegionRight":  0,
+                                                                                                                     "forceLinesAsSeparateRegions":  false,
+                                                                                                                     "forceLinesStartLocation":  "",
+                                                                                                                     "forceLinesLineHeight":  0,
+                                                                                                                     "forceLinesInterRowGap":  0,
+                                                                                                                     "pid":  0,
+                                                                                                                     "fontFiles":  [
+
+                                                                                                                                   ]
+                                                                                                                 }
+                                                                                                             ]
+                                                                                           },
+                                                                               "eegIcap":  {
+                                                                                               "enable":  false,
+                                                                                               "company":  "",
+                                                                                               "username":  "",
+                                                                                               "password":  "",
+                                                                                               "enableCCGateway":  false,
+                                                                                               "ccGatewayPrimary":  "",
+                                                                                               "ccGatewayBackup":  ""
+                                                                                           }
+                                                                           }
+                                                     },
+                                                     {
+                                                         "outputNumber":  4,
+                                                         "name":  "MCP",
+                                                         "mode":  "Master Control Preview",
+                                                         "setAsPresetGraphicsOutput":  true,
+                                                         "tsPlugin":  "",
+                                                         "vitc":  false,
+                                                         "vitcBasedOn":  "",
+                                                         "enableRedundantOutput":  false,
+                                                         "outputDestinations":  [
+                                                                                    {
+                                                                                        "ip":  "",
+                                                                                        "port":  0,
+                                                                                        "videoIp":  "",
+                                                                                        "videoPort":  0,
+                                                                                        "interfaceIp":  "",
+                                                                                        "redundantVideoIp":  "",
+                                                                                        "redundantVideoPort":  0,
+                                                                                        "web":  null,
+                                                                                        "outputAudioOverIPConfigurations":  {
+                                                                                                                                "audioIp1":  "",
+                                                                                                                                "audioPort1":  0,
+                                                                                                                                "audioIp2":  "",
+                                                                                                                                "audioPort2":  0,
+                                                                                                                                "redundantAudioIp1":  "",
+                                                                                                                                "redundantAudioPort1":  0,
+                                                                                                                                "redundantAudioIp2":  "",
+                                                                                                                                "redundantAudioPort2":  0
+                                                                                                                            },
+                                                                                        "ancillaryIp":  "",
+                                                                                        "ancillaryPort":  0,
+                                                                                        "redundantAncillaryIp":  "",
+                                                                                        "redundantAncillaryPort":  0
+                                                                                    }
+                                                                                ],
+                                                         "bitRateBps":  0,
+                                                         "aspectRatioControl":  false,
+                                                         "scte35":  {
+                                                                        "insert":  false,
+                                                                        "pid":  0
+                                                                    },
+                                                         "scte35CuePointsSink":  {
+                                                                                     "cuePointsSink":  false,
+                                                                                     "cuePointsSinkPort":  0
+                                                                                 },
+                                                         "scte104":  {
+                                                                         "insert":  false,
+                                                                         "line":  0
+                                                                     },
+                                                         "video":  {
+                                                                       "videoGuid":  "f712b1d5-dd63-49f1-bcad-db8c12bbdddf",
+                                                                       "profileName":  null,
+                                                                       "referencedProfileName":  "pv1",
+                                                                       "compressed":  false,
+                                                                       "videoStandard":  "NTSC",
+                                                                       "resolution":  null,
+                                                                       "frameRate":  0.0,
+                                                                       "codec":  "",
+                                                                       "videoPid":  0,
+                                                                       "bitRateBps":  0,
+                                                                       "HDR":  false
+                                                                   },
+                                                         "audios":  [
+                                                                        {
+                                                                            "audioGuid":  "85f4f43b-3e91-4a1a-8b7b-e0d94cb493d8",
+                                                                            "profileName":  "pa1",
+                                                                            "referencedProfileName":  null,
+                                                                            "compressed":  false,
+                                                                            "audioStandard":  null,
+                                                                            "normalize":  false,
+                                                                            "mapping":  null,
+                                                                            "audioPid":  18,
+                                                                            "dialNormDb":  0,
+                                                                            "bitRateBps":  0,
+                                                                            "speakerChannels":  null,
+                                                                            "linearAcousticPort1":  7300,
+                                                                            "linearAcousticPort2":  7301,
+                                                                            "pesAuNumber":  5,
+                                                                            "nielsen":  {
+                                                                                            "enable":  false
+                                                                                        }
+                                                                        }
+                                                                    ],
+                                                         "ancillaryData":  {
+                                                                               "enable":  false,
+                                                                               "pid":  0,
+                                                                               "caption":  {
+                                                                                               "ARIB":  false,
+                                                                                               "sourceFromClip":  false,
+                                                                                               "configureCentralService":  false,
+                                                                                               "enableOpenCaptions":  false,
+                                                                                               "DvbVbiDataPid":  0,
+                                                                                               "sourceType":  "",
+                                                                                               "lineNumber":  0,
+                                                                                               "dvbType":  "",
+                                                                                               "format_608_708":  "",
+                                                                                               "fromFile":  false,
+                                                                                               "fileServer":  "",
+                                                                                               "backupFileServer":  "",
+                                                                                               "languages":  [
+                                                                                                                 {
+                                                                                                                     "languageName":  "",
+                                                                                                                     "iso639_2Language":  "",
+                                                                                                                     "iso639_1Language":  "",
+                                                                                                                     "customLanguageCode":  "",
+                                                                                                                     "customLanguageName":  "",
+                                                                                                                     "fontSize":  0,
+                                                                                                                     "fontForeground":  "",
+                                                                                                                     "fontBackground":  "",
+                                                                                                                     "backgroundRenderMode":  "",
+                                                                                                                     "textToBorderDistance":  0.0,
+                                                                                                                     "style":  "",
+                                                                                                                     "subtitleRegion":  "",
+                                                                                                                     "font":  "",
+                                                                                                                     "horizontalTextJustification":  "",
+                                                                                                                     "verticalTextJustification":  "",
+                                                                                                                     "overrideRegionTop":  0,
+                                                                                                                     "overrideRegionBottom":  0,
+                                                                                                                     "overrideRegionLeft":  0,
+                                                                                                                     "overrideRegionRight":  0,
+                                                                                                                     "forceLinesAsSeparateRegions":  false,
+                                                                                                                     "forceLinesStartLocation":  "",
+                                                                                                                     "forceLinesLineHeight":  0,
+                                                                                                                     "forceLinesInterRowGap":  0,
+                                                                                                                     "pid":  0,
+                                                                                                                     "fontFiles":  [
+
+                                                                                                                                   ]
+                                                                                                                 }
+                                                                                                             ]
+                                                                                           },
+                                                                               "eegIcap":  {
+                                                                                               "enable":  false,
+                                                                                               "company":  "",
+                                                                                               "username":  "",
+                                                                                               "password":  "",
+                                                                                               "enableCCGateway":  false,
+                                                                                               "ccGatewayPrimary":  "",
+                                                                                               "ccGatewayBackup":  ""
+                                                                                           }
+                                                                           }
+                                                     }
+                                                 ],
+                                     "device":  "aws",
+                                     "numInstancesInDevice":  0,
+                                     "import":  {
+                                                    "isValid":  true
+                                                }
+                                 }
+                             ],
+        "jsonSchemaVersion":  "4.4.0.113"
+    }
+]

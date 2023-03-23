@@ -1,0 +1,15 @@
+{
+    "Logger": {
+      "LogThreshold": "Debug",
+      "LogToConsole": "false",
+      "LogToDebug": "false",
+      "LogToFile": "false",
+      "LogPath": "/var/log/IngestService.log",
+      "LogToWindowsEventLog": "false"
+    },
+    "VersioIngestService": {
+      "HermesServerUrl": "http://$HOSTNAME:9872/",
+      "portNumber": 81
+    },
+    "TruncateHouseId": false
+  }

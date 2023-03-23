@@ -1,0 +1,6 @@
+{
+  "IsSendRetryEnabled": false,
+  "RetryFrequency": "00:00:30",
+  "RetryMessageTtl": "00:01:00",
+  "DbName": null
+}

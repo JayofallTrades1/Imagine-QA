@@ -1,0 +1,9 @@
+{
+    "scribeFlags": {
+        "debug": false,
+        "info": true,
+        "log": true,
+        "warn": true,
+        "error": true
+    }
+} 

@@ -1,0 +1,14 @@
+{
+  "logger": {
+    "LogThreshold": "Debug",
+    "LogToConsole": "true",
+    "LogToDebug": "false",
+    "LogToFile": "true",
+    "LogPath": "/var/log/ContentService.log",
+    "LogToWindowsEventLog": "false"
+  },
+  "contentService": {
+    "HermesServerUrl": "http://10.121.204.100:9872/"
+  },
+  "instanceId": "692a04f94bd64624b4c5014b82e74227"
+}

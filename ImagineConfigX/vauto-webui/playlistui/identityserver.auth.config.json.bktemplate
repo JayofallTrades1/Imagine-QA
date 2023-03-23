@@ -1,0 +1,10 @@
+{
+    "url":  "",
+    "httpsCertificate":  {
+                             "allowInvalid":  "true"
+                         },
+    "signingCertificate":  {
+                               "allowInvalid":  "true"
+                           },
+    "enableAuth":  false
+}

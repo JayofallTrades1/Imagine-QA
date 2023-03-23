@@ -1,0 +1,26 @@
+{
+  "RabbitEndpoints": [
+    {
+      "Host": "localhost",
+      "Port": 5672,
+      "encrypted": false
+    }
+  ],
+  "RabbitUserName": "guest",
+  "RabbitPassword": "guest",
+  "RabbitVirtualHost": "",
+  "RabbitExchangeName": "Automation",
+  "RabbitInternalExchangeName": "AutomationInternal",
+  "RabbitGlobalEventExchangeName": "global.automation.event",
+  "RabbitRequestRoutingKey": "Translate.In",
+  "RabbitInternalTranslateRoutingKey": "Translate.Methods",
+  "HeartbeatInterval": "00:00:01",
+  "HermesEndpoints": [
+    {
+      "Host": "localhost",
+      "Port": 9872,
+      "encrypted": false
+    }
+  ],
+  "TimecodeCompatibility": false
+}

@@ -1,0 +1,15 @@
+﻿{ "Columns": [
+  { "SourceField": "StartDate", "Width": 10, "Name": "Date", "LeftMargin": 1 },
+  { "SourceField": "StartTime", "Width": 16, "Name": "Start", "LeftMargin": 2 },
+  { "SourceField": "HouseID", "Width": 32, "Name": "House ID", "LeftMargin": 2 },
+  { "SourceField": "SegmentNumber", "Width": 2,  "Name": "S", "LeftMargin": 2 },
+  { "SourceField": "Title", "Width": 32, "Name": "Title", "LeftMargin": 2 },
+  { "SourceField": "Duration", "Width": 16, "Name": "Duration", "LeftMargin": 2 },
+  { "SourceField": "PlayoutStatus", "Width": 26, "Name": "Status", "LeftMargin": 2 },
+  { "SourceField": "PlayoutChannel", "Width": 15, "Name": "Channel", "LeftMargin": 2 },
+  { "SourceField": "StartMode", "Width": 10, "Name": "Start Mode", "LeftMargin": 2 },
+  { "SourceField": "EndMode", "Width": 8,  "Name": "End Mode", "LeftMargin": 2 },
+  { "SourceField": "SecondaryStart", "Width": 22,  "Name": "Secondary", "LeftMargin": 2 },
+  { "SourceField": "Type", "Width": 24, "Name": "Event Type", "LeftMargin": 2 },
+  { "SourceField": "ReconcileKey", "Width": 32, "Name": "Reconcile Key", "LeftMargin": 2 }
+]}

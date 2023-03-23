@@ -1,0 +1,16 @@
+{
+    "license": [
+                "./plugins/license.json",
+                "./plugins/mcp_license.json",
+                "./plugins/onyx_license.json"
+               ],
+    "plugins": [ ],
+
+    "scribeFlags": {
+        "debug": false,
+        "info": true,
+        "log": true,
+        "warn": true,
+        "error": true
+    }
+} 

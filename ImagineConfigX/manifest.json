@@ -1,0 +1,5 @@
+{
+   "channel-spinup": { "enabled": true, "version": "3.3.0-alpine" },
+   "vauto-settings-ui": { "enabled": true, "version": "4.6.0.64" },
+   "envoy-dev": { "enabled": true, "version": "dc3460c247538b8f81d49bd7984f46d142f20ba9" }
+}
